@@ -1,0 +1,88 @@
+{
+    "phones": [
+      {
+        "id": 0,
+        "name": "iPhone 7",
+        "manufacturer": "Apple",
+        "description": "lorem ipsum dolor sit amet consectetur.",
+        "color": "black",
+        "price": 769,
+        "imageFileName": "https://source.unsplash.com/random/400x300/?iphone7",
+        "screen": "4,7 inch IPS",
+        "processor": "A10 Fusion",
+        "ram": 2
+      },
+      {
+        "id": 1,
+        "name": "iPhone 8",
+        "manufacturer": "Apple",
+        "description": "lorem ipsum dolor sit amet consectetur.",
+        "color": "white",
+        "price": 869,
+        "imageFileName": "https://source.unsplash.com/random/400x300/?iphone8",
+        "screen": "4,7 inch IPS",
+        "processor": "A10 Fusion",
+        "ram": 2
+      },
+      {
+        "id": 3,
+        "name": "Samsung S20",
+        "manufacturer": "Samsung",
+        "description": "lorem ipsum dolor sit amet consectetur.",
+        "color": "black",
+        "price": 900,
+        "imageFileName": "https://source.unsplash.com/random/400x300/?samsung,phone",
+        "screen": "4,7 inch IPS",
+        "processor": "A10 Fusion",
+        "ram": 2
+      },
+      {
+        "id": 4,
+        "name": "Samsung M22",
+        "manufacturer": "Samsung",
+        "description": "lorem ipsum dolor sit amet consectetur.",
+        "color": "blue",
+        "price": 300,
+        "imageFileName": "https://source.unsplash.com/random/400x300/?phone,samsung",
+        "screen": "4,7 inch IPS",
+        "processor": "A10 Fusion",
+        "ram": 2
+      },
+      {
+        "name": "Huawei P30",
+        "manufacturer": "Huawei",
+        "description": "New Huawei...",
+        "color": "Black",
+        "price": "496",
+        "imageFileName": "https://source.unsplash.com/random/400x300/?phone",
+        "screen": "New screen ",
+        "processor": "Processor",
+        "ram": "Ram...",
+        "id": 6
+      },
+      {
+        "name": "New Phone",
+        "manufacturer": "New Manufacturer",
+        "description": "Cred stumptown small batch seitan roof party echo park, air plant bitters pour-over chartreuse kale chips cronut sriracha messenger bag.",
+        "color": "Green",
+        "price": "197",
+        "imageFileName": "https://source.unsplash.com/random/400x300/?phone",
+        "screen": "Screen",
+        "processor": "Processor",
+        "ram": "Ram",
+        "id": 8
+      },
+      {
+        "name": "Huawei P30",
+        "manufacturer": "Huawei",
+        "description": "New phone",
+        "color": "Black",
+        "price": "399",
+        "imageFileName": "https://source.unsplash.com/random/400x300/?phone, huawei",
+        "screen": "Last generation screen",
+        "processor": "Last Processor",
+        "ram": "128",
+        "id": 9
+      }
+    ]
+  }
