@@ -1,13 +1,16 @@
 import propTypes from 'prop-types';
 
-const Item = ({ phone, showProduct }) => {
+const Item = ({ phone, showProduct, moreInfo, removePhone, removeProduct }) => {
     return (
         <li>
             <img src={phone.imageFileName} alt={phone.name} />
             <h3>{phone.name}</h3>
             <p className='price'>{phone.price} &euro;</p>
             <p className='description'>{phone.description}</p>
-            <button className='btn' onClick={() => showProduct(phone.id)}>{moreInfo}</button>
+            <div className='buttonsContainer'>
+                <button className='btn secondary' onClick={() => removePhone(phone.id)}>{removeProduct}</button>
+                <button className='btn' onClick={() => showProduct(phone.id)}>{moreInfo}</button>
+            </div>
         </li>
     )
 }

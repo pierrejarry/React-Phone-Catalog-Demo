@@ -40,7 +40,7 @@ const AddPhone = ({ onAdd }) => {
   }
 
   return (
-    <div class="addProduct">
+    <div className="addProduct">
         <h2>Please add a new product here</h2>
         <form onSubmit={onSubmit}>
             <div className='form-control'>

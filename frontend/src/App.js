@@ -4,12 +4,14 @@ import Header from "./components/Header";
 import Catalog from "./components/Catalog";
 import Popup from "./components/Popup";
 import AddPhone from "./components/AddPhone";
+import Snackbar from "./components/Snackbar";
 
 function App() {
   const [phones, setPhones] = useState([])
   const [showPopup, setShowPopup] = useState(false);
   const [popupData, setPopupData] = useState([]);
   const [showForm, setShowForm] = useState(false);
+  const [showSnackbar, setShowSnackbar] = useState(false);
 
   useEffect(() => {
     const getPhoneCatalog = async () => {
@@ -62,6 +64,17 @@ function App() {
     setShowForm(false);
   }
 
+  // Delete Phone Item
+  const deletePhone = async (id) => {
+    await fetch(`http://localhost:5000/phones/${id}`, {
+      method: 'DELETE'
+    })
+
+    setPhones(phones.filter((phone) => phone.id !== id))
+    setShowSnackbar(true);
+    setTimeout(function(){ setShowSnackbar(false); }, 3000);
+  }
+
   return (
     <div className="container">
       <Header/>
@@ -70,10 +83,13 @@ function App() {
       <Catalog 
         phones={phones} 
         showProduct={showProductDetails}
+        removePhone={deletePhone}
       />
       
       { showPopup && <div className='overlay' onClick={() => hideProductDetails()} /> }
       { showPopup && <Popup popupData={popupData} showPopup={hideProductDetails} /> }
+
+      <Snackbar showSnackbar={showSnackbar}/>
     </div>
   );
 }

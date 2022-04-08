@@ -1,9 +1,9 @@
 import Item from "./Item";
 
-const Catalog = ({ phones, showProduct }) => {
+const Catalog = ({ phones, showProduct, removePhone }) => {
 
   const phoneItems = phones.map((phone) =>
-    <Item phone={phone} key={phone.id.toString()} showProduct={showProduct} />
+    <Item phone={phone} key={phone.id.toString()} showProduct={showProduct} removePhone={removePhone} />
   );
 
   return (
