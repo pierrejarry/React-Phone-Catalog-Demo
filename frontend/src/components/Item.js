@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 
-const Item = ({ phone, showProduct, moreInfo }) => {
+const Item = ({ phone, showProduct }) => {
     return (
         <li>
             <img src={phone.imageFileName} alt={phone.name} />

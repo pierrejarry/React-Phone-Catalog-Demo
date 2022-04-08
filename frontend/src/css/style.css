@@ -62,6 +62,16 @@ header {
       color: var(--body);
   }
 
+.btn.secondary {
+    background-color: transparent;
+    color: var(--body);
+}
+
+    .btn.secondary:hover {
+        background-color: var(--body);
+        color: var(--white);
+    }
+
 /* ------------------------------------------------------
      [ Catalog ]
 -------------------------------------------------------*/
@@ -95,6 +105,60 @@ header {
       .catalogList li .flex {
           margin-top: auto;
       }
+
+/* ------------------------------------------------------
+     [ Form ]
+-------------------------------------------------------*/
+
+.addProduct {
+  background-color: papayawhip;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+
+.addProduct h2 {
+  text-align: center;
+}
+
+form {  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+  form .btnContainer {
+    flex: 1 1 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+    form .btnContainer .btn {
+      width: 200px;
+    }
+
+.form-control {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+textarea {
+    padding: 10px;
+}
 
 /* ------------------------------------------------------
      [ Popup ]
@@ -169,6 +233,12 @@ header {
 @media only screen and (max-width: 992px) {
   .catalogList li {
       width: calc(50% - 10px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-control {
+    flex: 1 1 100%;
   }
 }
 
