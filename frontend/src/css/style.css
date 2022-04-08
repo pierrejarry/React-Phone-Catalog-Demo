@@ -46,7 +46,25 @@ header {
   text-align: center;
 }
 
-/* Catalog */
+.btn {
+  background-color: var(--body);
+  border: 1px solid var(--body);
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  line-height: 44px;
+  padding: 0 20px;
+  transition: 0.5s all;
+}
+
+  .btn:hover {
+      background-color: transparent;
+      color: var(--body);
+  }
+
+/* ------------------------------------------------------
+     [ Catalog ]
+-------------------------------------------------------*/
 
 .catalogList {
   display: flex;
@@ -77,3 +95,85 @@ header {
       .catalogList li .flex {
           margin-top: auto;
       }
+
+/* ------------------------------------------------------
+     [ Popup ]
+-------------------------------------------------------*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+}
+
+.popup {
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  left: 50%;
+  max-width: 400px;
+  position: fixed;
+  top: 50%;
+  transition: all 5s ease-in-out;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+}
+
+  .popup h2 {
+      text-align: center;
+  }
+
+  .popup img {
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+  }
+
+  .popup .characteristics {
+      border-top: 1px solid #ccc;
+      font-weight: 600;
+      margin: 20px 0;
+      padding-top: 10px;
+      text-align: center;
+  }
+
+  .popup .btn {
+      margin-top: 20px;
+      width: 100%;
+  }
+
+  .popup .description {
+    text-align: center;
+  }
+
+
+/* ------------------------------------------------------
+     [ Responsive ]
+-------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+  .container {
+      padding: 10px;
+  }
+  
+  .catalogList li {
+      width: calc(33.3% - 10px);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .catalogList li {
+      width: calc(50% - 10px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .catalogList li {
+      width: 100%;
+  }
+}
